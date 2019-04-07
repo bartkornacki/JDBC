@@ -1,6 +1,5 @@
 package dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,8 +15,6 @@ public class BookDto {
     private Long isbn;
     private String categoryCode;
     private String publisherName;
-
-
 
     @Override
     public String toString() {

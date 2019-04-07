@@ -4,10 +4,7 @@ import connection.BookstoreDataSource;
 import connection.ConnectionManager;
 import extractor.BookExtractor;
 import model.Book;
-import service.BookService;
-import service.BookServiceImpl;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
