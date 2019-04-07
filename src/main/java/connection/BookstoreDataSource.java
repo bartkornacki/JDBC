@@ -10,8 +10,8 @@ public class BookstoreDataSource {
 
     static {
         basicDataSource.setUrl("jdbc:mysql://localhost:3306/bookstore14?useSSL=false");
-        basicDataSource.setUsername("root");
-        basicDataSource.setPassword(                                                                                                        "lespaul14sg");
+        basicDataSource.setUsername("admin14");
+        basicDataSource.setPassword("admin14");
         basicDataSource.setMinIdle(5);
         basicDataSource.setMaxIdle(10);
         basicDataSource.setMaxOpenPreparedStatements(100);

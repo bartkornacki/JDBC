@@ -100,6 +100,25 @@ public class BookDaoImpl implements BookDao {
         }
     }
 
+    @Override
+    public void insert(String title, Long isbn, Integer pagesNumber, Integer categoryId, Integer publisherId) {
+        String insert = "insert into books values (default,?,?,?,?,?)";
+        try (Connection connection = ConnectionManager.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(insert);
+        ) {
+            preparedStatement.setString(1, title);
+            preparedStatement.setInt(2, pagesNumber);
+            preparedStatement.setLong(3, isbn);
+            preparedStatement.setInt(4, categoryId);
+            preparedStatement.setInt(5, publisherId);
+            Integer result = preparedStatement.executeUpdate();
+            System.out.println(result + " row(s) inserted");
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
     public void delete(int id) {
 
     }

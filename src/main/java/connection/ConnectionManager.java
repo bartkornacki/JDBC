@@ -7,6 +7,7 @@ import java.sql.SQLException;
 public class ConnectionManager {
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore14?useSSL=false", "root",                       "lespaul14sg");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore14?useSSL=false",
+                "admin14","admin14");
     }
 }
